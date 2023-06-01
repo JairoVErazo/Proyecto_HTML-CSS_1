@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E2E2E2;
+    padding: 10px;
+    color: #474747;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    transition: all .5s;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #ABABAB;
+}
+
+.nav-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container-1 img{
+    margin-right: 10px;
+    height: 50px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.box-center{
+    margin: auto;
+    width: 80%;
+}
+
+.off-road{
+    position: relative;
+    background-image: url(../img/Offroad-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+.offroad-text{
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.offroad-text h1, h2{
+    color: white;
+}
+
+h1{
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #ABABAB;
+}
+
+.catalogo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap ;
+}
+
+.catalogo, h3{
+    color: #000;
+}
+
+.card{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.card:nth-child(1){
+    background-image: url(../img/dmax-1.jpg);
+}
+
+.card:nth-child(2){
+    background-image: url(../img/tacoma-2.jpg);
+}
+
+.card:nth-child(3){
+    background-image: url(../img/silverado.jpg);
+}
+
+.card:nth-child(4){
+    background-image: url(../img/jeep.jpg);
+}
+
+.card:nth-child(5){
+    background-image: url(../img/bronco.jpg);
+}
+
+.card:nth-child(6){
+    background-image: url(../img/trx.jpg);
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.card:hover .card-container{
+    opacity: 1;
+}
+
+.card-tittle{
+    color: #ABABAB;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+}
+
+.btn{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-card{
+    background-color: #333;
+    color: white;
+    transition: all .5s;
+}
+
+.btn-card:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #000;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.texto-contacto{
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+.footer-parrafo{
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 60%;
+}
+
+.icons a{
+    display: flex;
+    background-color: #474747;
+    border-radius: 50%;
+    margin: 5px;
+    color: white;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.icons a:hover{
+    background-color: transparent;
+}
