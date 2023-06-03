@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*html{
+    font-size: 10px;
+}
+
 header {
     background-color: #E2E2E2;
     padding: 10px;
@@ -58,22 +62,27 @@ section{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 500px;
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .nosotros-text{
-    width: 700px;
+    width: 40%;
     text-align: center;
+}
+
+.nosotros-text h1, h2{
+    margin: 0 2rem;
+    color: white;
 }
 
 h1{
     color: #ABABAB;
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: bold;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h2{
@@ -87,15 +96,6 @@ h3{
     font-size: 1.8rem;
 }
 
-p{
-    font-size: 1.5rem;
-    color: #ABABAB;
-}
-
-.nosotros p{
-    line-height: 1.5rem;
-    color: #ABABAB;
-}
 
 .box-center{
     margin: auto;
@@ -103,35 +103,33 @@ p{
 }
 
 .about-mantenimiento{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 #text-sapn{
     color: #001a61;
 }
 
-.about-mantenimiento .content-mantenimiento{
-    margin-top: 40px;
-    flex: 0 0 50%;
+.content-mantenimiento h3{
+    margin: 1.5rem 0;
+    font-size: 2rem;
 }
 
 .content-image{
-    margin-top: 40px;
     position: relative;
-    flex: 0 0 400px;
-
 }
 
 .content-image img{
     width: 100%;
-    height: 410px;
+    height: 35rem;
     object-fit: cover;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-    transition: all .5s;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 .texto-parrafo{
+    color: #ABABAB;
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -150,6 +148,11 @@ p{
 .ubi{
     display: flex;
     justify-content: center;
+}
+
+.texto-parrafo2{
+    color: white;
+    font-size: 1.2rem;
 }
 
 .btn-off{
@@ -197,25 +200,15 @@ footer{
     gap: 20px;
 }
 
-h3{
-    margin-bottom: 70px;
+.footer-container h3{
+    margin-bottom: 2rem;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #222;
-    text-align: center;
+    color: #f3f2f2;
 }
-
-.texto-contacto, h3{
-    font-size: 1.6rem;
-    color: #ffffff;
-    text-align: left;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-
 
 .footer-parrafo{
+    font-size: 1.2rem;
     line-height: 40px;
     color: #ffffff;
 }
@@ -243,4 +236,44 @@ h3{
 
 .icons a:hover{
     background-color: transparent;
+}
+
+@media (max-width:575px){
+    h1{
+        font-size: 1.5rem;
+    }
+    .nosotros-text{
+        width: 100%;
+    }
+
+    .nosotros-text h1, h2{
+        font-size: 1.5rem;
+    }
+
+    .texto-parrafo{
+        color: #ABABAB;
+    }
+
+    .about-mantenimiento{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .texto-parrafo2{
+        text-align: center;
+    }
+
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem 0;
+    }
+
+    .footer-container h3{
+        font-size: 1.2rem;
+    }
+
+    .footer-parrafo{
+        font-size: 0.9rem;
+    }
+
 }
