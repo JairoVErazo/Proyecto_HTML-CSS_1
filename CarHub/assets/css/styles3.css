@@ -327,3 +327,29 @@ footer{
         font-size: 0.9rem;
     }
 }
+
+@media (min-width:576px) and (max-width:959px){
+
+    .catalogo-container{
+        display: grid;
+        gap: 3.5rem;
+        justify-content: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .texto-parrafo2{
+        text-align: center;
+    }
+
+    .footer-container h3{
+        font-size: 1.5rem;
+    }
+
+    .footer-parrafo{
+        font-size: 1.2rem;
+    }
+}
