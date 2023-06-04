@@ -48,6 +48,22 @@ nav a:hover {
     align-items: center;
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: #ff0000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+    float: right;
+}
+
+
 section{
     padding: 100px 0;
 }
@@ -237,11 +253,49 @@ footer{
 }
 
 @media (max-width:575px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+    }
+
+    .nav-container-1 img{
+        height: 2.5;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        background: #E2E2E2;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .bandera{
+        display: none;
+    }
+
     h1{
         font-size: 1.5rem;
     }
 
     .off-road{
+        position: unset;
         grid-template-columns: repeat(1, 1fr)
     }
 
